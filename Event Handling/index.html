@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+  </head>
+  <body>
+    <button onclick="alert('the button is clicked')">Click Me</button>
+    <h1 onmouseover="alert('the h1 tag is hovered')">Hover Me</h1>
+    <input type="text" onkeyup="alert('the input is changed')" />
+    <form action="" onsubmit="alert('the form is submitted')">
+      <input type="text" />
+      <input type="submit" value="submit" />
+      <button id="btn">Click Me</button>
+    </form>
+  </body>
+</html>
+<script>
+  document.getElementById("btn").onclick = btnclick;
+  function btnclick() {
+    alert("the button clicked");
+  }
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML access in JS</title>
+  </head>
+  <body>
+    <h1 id="introtext">This is h1 tag</h1>
+    <h1 class="introtext">This is first h1 tag</h1>
+    <h1 class="introtext">This is second h1 tag</h1>
+    <h1 name="introtext">This is tag h1</h1>
+    <h1 tagname="introtext">This is tag</h1>
+  </body>
+</html>
+
+<script>
+  //(For accessing id)
+  //var x = document.getElementById("introtext");
+  //x.innerHTML = "The h1 tag is accessed";
+
+  //(For accessing classname)
+  //var x = document.getElementsByClassName("introtext");
+  //x[1].innerHTML = "The second h1 tag is accessed ";
+  //x[1].style.color = "red";
+  //x[0].style.color = "green";
+  //(For accessing name)
+  //var x = document.getElementsByName("introtext");
+  //x.innertext = "The h1 tag is accesed using name attribute"; //(not work for name property, it works only for input element)
+  var x = document.getElementsByTagName("h1");
+  x[4].innerHTML = "The h1 tag is accessed using tag atrribute ";
+</script>
